@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-    baseURL: "http://localhost:5001",
+    baseURL: "https://collaborative-storytelling-app.onrender.com",
     withCredentials: true, 
 });
 
