@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "postinstall": "npm rebuild esbuild rollup",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -30,5 +31,8 @@
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.18.2",
     "vite": "^6.0.5"
-  }
+  },
+  "engines": {
+    "node": "18.x"
+}
 }
