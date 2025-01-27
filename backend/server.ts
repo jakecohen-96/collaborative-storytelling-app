@@ -8,7 +8,7 @@ import contributorRoutes from "./routes/contributorRoutes";
 dotenv.config();
 
 const app: Application = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 10000;
 
 app.use(express.json());
 app.use("/auth", authRoutes);
@@ -17,7 +17,7 @@ app.use("/contributors", contributorRoutes);
 
 // Basic route for testing
 app.get("/", (req: Request, res: Response) => {
-  res.send("Collaborative Storytelling App Backend is Running!");
+  res.send("Backend is running");
 });
 
 // Test database connection route
